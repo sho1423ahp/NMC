@@ -1,12 +1,11 @@
 body{
-  position: relative;
   background: url(../img/26.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
 }
-  body:before{
-  content: "";
+body::before{
+  content: " ";
   background: #000;
   opacity: 0.5;
   position: absolute;
@@ -17,7 +16,7 @@ body{
   z-index: -1;
 }
 
-  #particles-js{
+#particles-js{
     height:100%;
     width:100%;
   }
