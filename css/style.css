@@ -68,7 +68,7 @@ background-image: url(../img/26.jpg);
 z-index: 3;
 }
 body {
-    background:#bf5c71 url('body-bg.jpg');
+    background:#000000 url('body-bg.jpg');
 }
  
 .clearfix:after {
