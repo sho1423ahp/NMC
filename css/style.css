@@ -96,7 +96,7 @@ body {
  
 .menu a {
     transition:all linear 0.15s;
-    color:#919191;
+    color:#ffffff;
 }
  
 .menu li:hover > a, .menu .current-item > a {
@@ -158,4 +158,8 @@ body {
  
 .sub-menu li a:hover, .sub-menu .current-item a {
     background:#3e3436;
+}
+.menu{
+position: relative;
+z-index: 3;
 }
