@@ -48,19 +48,19 @@ background-image: url(../img/26.jpg);
     min-height: 100%;
 }
 .cd-scrolling-bg.cd-color-1 {
-  background-color: #696969;
+  background-color: #2E2E2E;
   color: #ffffff;
 }
 .cd-scrolling-bg.cd-color-2 {
-  background-color: #99a478;
+  background-color: #2E2E2E;
   color: #3d3536;
 }
 .cd-scrolling-bg.cd-color-3 {
-  background-color: #708090;
+  background-color: #2E2E2E;
   color: #000000;
 }
 .cd-scrolling-bg.cd-color-4 {
-  background-color: #b4d7a8;
+  background-color: #2E2E2E;
   color: #3d3536;
 }
 .text{
@@ -160,6 +160,7 @@ body {
     background:#3e3436;
 }
 .menu{
-position: relative;
-z-index: 3;
-}
+position: fixed;
+    top: 0;
+    left:0;;
+z-index: 4;
