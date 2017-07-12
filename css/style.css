@@ -4,6 +4,11 @@ body{
   background-attachment: fixed;
   background-position: center center;
 }
+@media only screen and (max-width: 767px) {
+  body {
+background-image: url(../img/26.jpg);
+  }
+}
 body::before{
   content: " ";
   background: #000;
@@ -19,7 +24,7 @@ body::before{
 #particles-js{
     height:100%;
     width:100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -27,3 +32,51 @@ body::before{
     z-index: 0;
     display: block;
   }
+  body, html, main {
+    /* important */
+    height: 100%;
+}
+  
+.cd-fixed-bg {
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+  
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("../img/26.jpg");
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("../img/29.jpg");
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("../img/28.jpg");
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("../img/27.jpg");
+}
+  
+.cd-scrolling-bg {
+    min-height: 100%;
+}
+.cd-scrolling-bg.cd-color-1 {
+  background-color: #696969;
+  color: #ffffff;
+}
+.cd-scrolling-bg.cd-color-2 {
+  background-color: #99a478;
+  color: #3d3536;
+}
+.cd-scrolling-bg.cd-color-3 {
+  background-color: #708090;
+  color: #000000;
+}
+.cd-scrolling-bg.cd-color-4 {
+  background-color: #b4d7a8;
+  color: #3d3536;
+}
+.text{
+z-index: 3;
+}
