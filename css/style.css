@@ -1,9 +1,3 @@
-@media only screen and (max-width: 767px) {
-  body {
-background-image: url(../img/26.jpg);
-  }
-}
-
 #particles-js{
     height:100%;
     width:100%;
@@ -164,3 +158,7 @@ position: fixed;
     top: 0;
     left:0;;
 z-index: 4;
+}
+body    {
+display:none
+}
