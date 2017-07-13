@@ -159,6 +159,11 @@ position: fixed;
     left:0;;
 z-index: 4;
 }
-body    {
-display:none
+body{
+  background: #000;
+  animation: fadeIn 2s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
 }
