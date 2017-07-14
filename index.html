@@ -3,61 +3,96 @@
 
 <head>
     <meta charset=”UTF-8″ />
-    <title>TestPage</title>
+    <title>N Movie Creator</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <script src="js/jquery.js"></script>
     <script type="text/javascript" src="js/scroll"></script>
     <script src="js/jquery.js"></script>
+    <style>
+        #wrapper {
+            width: 500px;
+            height: 500px;
+            line-height: 500px;
+            /* heightと同じ値 */
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #center-image {
+            vertical-align: middle;
+        }
+</style>
+<script type="text/javascript">
+  jQuery(function() {
+    var nav = jQuery('.nav');
+    var navTop = nav.offset().top;
+    jQuery(window).scroll(function () {
+      var winTop = jQuery(this).scrollTop();
+      if (winTop >= navTop) {
+        nav.addClass('fixed')
+      } else if (winTop <= navTop) {
+        nav.removeClass('fixed')
+      }
+    });
+});
+</script>
 </head>
 
 <body>
-    <div id="scroll_1"></div>
-    <div class="menu-wrap">
-        <nav class="menu">
-            <ul class="clearfix">
-                <li><a href="#scroll_1">Home</a></li>
-                <li>
+    <div id="fixedBox" class="nav">
+        <div class="menu-wrap">
+            <nav class="menu">
+                <ul class="clearfix">
+                    <li><a href="#">Home</a></li>
                     <li><a href="#scroll_2">About</a></li>
                     <li><a href="#scroll_3">Member</a></li>
                     <li><a href="#scroll_4">Movie</a></li>
                     <li><a href="#scroll_5">Connect</a></li>
-            </ul>
-        </nav>
+                </ul>
+            </nav>
+        </div>
+    </div>
     </div>
     </div>
     </section>
     <main>
         <div class="cd-fixed-bg cd-bg-1">
-        <div class="outer">
-            <div class="inner">
-                <img src="img/32.png" alt="logo">
+            <div class="outer">
+                <div class="inner">
+                    <div class='box'>
+                        <img src="img/32.png" id="center-image" />
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+        </section>
         </div>
         <div class="cd-scrolling-bg cd-color-1 text">
             <div class="cd-container">
                 <p>
-                    <div id="scroll_2"></div>
-                    <br>
-                    <br>
-                    <section class="fadein">
-                        <div class="outer">
-                            <div class="inner">
-                                <h1>NMC About</h1>
+                    <div id="scroll_2">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <section class="fadein">
+                            <div class="outer">
+                                <div class="inner">
+                                    <h1>NMC About</h1>
+                                </div>
                             </div>
-                        </div>
-                        <div class="outer">
-                            <div class="inner">
-                                <h3>
-                                    NMCことN Movie Creatorは角川ドワンゴ学園N高等学校の公認同好会です。<br> NMCのモットー、最終的な目標は「一人ひとりをMovie Creatorにする」<br>                                    一人ひとりの個性を伸ばし、成長させて行くことによって自分を誇ることの出来る
-                                    <br> Creatorになって欲しいと言う願いも込めたモットーです
-                                    <br>
-                                </h3>
-                                <img src="img/30.jpg" alt="サンプル">
+                            <div class="outer">
+                                <div class="inner">
+                                    <h3>NMCことN Movie Creatorは角川ドワンゴ学園N高等学校の公認同好会です。<br> NMCのモットー、最終的な目標は「一人ひとりをMovie Creatorにする」<br>                                        一人ひとりの個性を伸ばし、成長させて行くことによって自分を誇ることの出来る
+                                        <br> Creatorになって欲しいと言う願いも込めたモットーです
+                                        <br>
+                                    </h3>
+                                    <img src="img/34.jpg" alt="about">
+                                </div>
                             </div>
-                        </div>
+                    </div>
                     </section>
 
                 </p>
@@ -73,6 +108,9 @@
                     <div id="scroll_3"></div>
                     <br>
                     <br>
+                    <br>
+                    <br>
+                    <br>
                     <section class="fadein">
                         <div class="outer">
                             <div class="inner">
@@ -82,11 +120,12 @@
                         <div class="outer">
                             <div class="inner">
                                 <h3>
-                                    NMCことN Movie Creatorは角川ドワンゴ学園N高等学校の公認同好会です。<br> NMCのモットー、最終的な目標は「一人ひとりをMovie Creatorにする」<br>                                    一人ひとりの個性を伸ばし、成長させて行くことによって自分を誇ることの出来る
-                                    <br> Creatorになって欲しいと言う願いも込めたモットーです
+                                    ・パンダ 《会長》<br> ・タルメイロ 《副会長》<br> ・のどあめ 《副会長》<br> ・えむけー 《書記》<br> ・sho 《会計》<br> and more
+                                    members..
+                                    <br>
                                     <br>
                                 </h3>
-                                <img src="img/30.jpg" alt="サンプル">
+                                <img src="img/33.jpg" alt="member">
                             </div>
                         </div>
                     </section>
@@ -103,20 +142,27 @@
                     <div id="scroll_4"></div>
                     <br>
                     <br>
+                    <br>
+                    <br>
+                    <br>
                     <section class="fadein">
                         <div class="outer">
                             <div class="inner">
                                 <h1>NMC Movie</h1>
                             </div>
                         </div>
+                        <br>
+                        <br>
                         <div class="outer">
                             <div class="inner">
-                                <h3>
-                                    NMCことN Movie Creatorは角川ドワンゴ学園N高等学校の公認同好会です。<br> NMCのモットー、最終的な目標は「一人ひとりをMovie Creatorにする」<br>                                    一人ひとりの個性を伸ばし、成長させて行くことによって自分を誇ることの出来る
-                                    <br> Creatorになって欲しいと言う願いも込めたモットーです
-                                    <br>
-                                </h3>
-                                <img src="img/30.jpg" alt="サンプル">
+                                <div class="iframe">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/coxR6pRhmI4?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BNbyNMdNdd0?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                                </div>
+                                <div class="iframe">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cQU2LcLUSIs?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qww1BDwLqac?rel=0" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -132,6 +178,9 @@
                     <div id="scroll_5"></div>
                     <br>
                     <br>
+                    <br>
+                    <br>
+                    <br>
                     <section class="fadein">
                         <div class="outer">
                             <div class="inner">
@@ -141,8 +190,8 @@
                         <div class="outer">
                             <div class="inner">
                                 <h3>
-                                    NMCことN Movie Creatorは角川ドワンゴ学園N高等学校の公認同好会です。<br> NMCのモットー、最終的な目標は「一人ひとりをMovie Creatorにする」<br>                                    一人ひとりの個性を伸ばし、成長させて行くことによって自分を誇ることの出来る
-                                    <br> Creatorになって欲しいと言う願いも込めたモットーです
+                                    <a class="twitter-timeline" href="https://twitter.com/TwitterDev/timelines/539487832448843776">National Park Tweets - Curated tweets by TwitterDev</a>
+                                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                                     <br>
                                 </h3>
                                 <img src="img/30.jpg" alt="サンプル">
