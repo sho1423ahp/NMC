@@ -47,15 +47,15 @@
 }
 .cd-scrolling-bg.cd-color-2 {
   background-color: #2E2E2E;
-  color: #3d3536;
+  color: #ffffff;
 }
 .cd-scrolling-bg.cd-color-3 {
   background-color: #2E2E2E;
-  color: #000000;
+  color: #ffffff;
 }
 .cd-scrolling-bg.cd-color-4 {
   background-color: #2E2E2E;
-  color: #3d3536;
+  color: #ffffff;
 }
 .text{
   position: relative;
@@ -166,4 +166,25 @@ body{
 @keyframes fadeIn {
     0% {opacity: 0}
     100% {opacity: 1}
+}
+
+/* 画面外にいる状態 */
+.fadein {
+    opacity : 0.1;
+    transform : translate(0, 50px);
+    transition : all 500ms;
+    }
+ 
+/* 画面内に入った状態 */
+.fadein.scrollin {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+
+.outer{
+  text-align: center;
+}
+.inner{
+  display: inline-block;
+  text-align: left;
 }
