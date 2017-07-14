@@ -22,21 +22,22 @@
         #center-image {
             vertical-align: middle;
         }
-</style>
-<script type="text/javascript">
-  jQuery(function() {
-    var nav = jQuery('.nav');
-    var navTop = nav.offset().top;
-    jQuery(window).scroll(function () {
-      var winTop = jQuery(this).scrollTop();
-      if (winTop >= navTop) {
-        nav.addClass('fixed')
-      } else if (winTop <= navTop) {
-        nav.removeClass('fixed')
-      }
-    });
-});
-</script>
+    </style>
+    <script type="text/javascript">
+        jQuery(function () {
+            var nav = jQuery('.nav');
+            var navTop = nav.offset().top;
+            jQuery(window).scroll(function () {
+                var winTop = jQuery(this).scrollTop();
+                if (winTop >= navTop) {
+                    nav.addClass('fixed')
+                } else if (winTop <= navTop) {
+                    nav.removeClass('fixed')
+                }
+            });
+        });
+
+    </script>
 </head>
 
 <body>
@@ -189,11 +190,13 @@
                         </div>
                         <div class="outer">
                             <div class="inner">
-                                <h3>
-                                    <a class="twitter-timeline" href="https://twitter.com/TwitterDev/timelines/539487832448843776">National Park Tweets - Curated tweets by TwitterDev</a>
-                                    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                    <br>
-                                </h3>
+                                <ul class="ico">
+                                    <div class="morph pic"><img src="img/35.png"></div>
+                                    <div class="morph pic"><img src="img/36.png"></div>
+                                    <h3>
+                                        <br>
+                                    </h3>
+                                </ul>
                             </div>
                         </div>
                     </section>
