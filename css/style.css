@@ -226,7 +226,9 @@ display:flex;
       -ms-transform: rotate(360deg);
           transform: rotate(360deg);
 }
-.ico {
+.flex-container {
+  display: -webkit-flex; /* Safari */
   display: flex;
-  justify-content: center;
+  -webkit-justify-content: space-around; /* Safari */
+  justify-content:         space-around;
 }
