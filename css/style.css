@@ -232,3 +232,16 @@ display:flex;
   -webkit-justify-content: space-around; /* Safari */
   justify-content:         space-around;
 }
+.box2 {
+  padding-bottom: .5em;
+  border-bottom: 1px solid #ccc;
+}
+body{
+text-align:center;
+}
+
+.box3{
+margin-left:auto;
+margin-right:auto;
+text-align:left;
+}
