@@ -187,4 +187,9 @@ body{
 .inner{
   display: inline-block;
   text-align: left;
+  max-width: 960px;
+}
+.inner img{
+  width: 100%;
+  height: auto;
 }
