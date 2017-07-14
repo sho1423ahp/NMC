@@ -74,12 +74,14 @@ body {
 .menu-wrap {
     width:100%;
     box-shadow:0px 1px 3px rgba(0,0,0,0.2);
-    background:#3e3436;
+    background:#565656;
 }
  
 .menu {
+    position: relative;
     width:1000px;
     margin:0px auto;
+    z-index: 5;
 }
  
 .menu li {
@@ -105,7 +107,7 @@ body {
  
 /*----- Top Level -----*/
 .menu > ul > li {
-    float:left;
+    float:none;
     display:inline-block;
     position:relative;
     font-size:19px;
@@ -153,12 +155,6 @@ body {
 .sub-menu li a:hover, .sub-menu .current-item a {
     background:#3e3436;
 }
-.menu{
-position: fixed;
-    top: 0;
-    left:0;;
-z-index: 4;
-}
 body{
   background: #000;
   animation: fadeIn 2s ease 0s 1 normal;
@@ -193,6 +189,23 @@ body{
   width: 100%;
   height: auto;
 }
-.iframe {
-display:flex
+.box {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  
+  width: 700px;
+  height: 100px;
+}
+.iframe{
+display:flex;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
